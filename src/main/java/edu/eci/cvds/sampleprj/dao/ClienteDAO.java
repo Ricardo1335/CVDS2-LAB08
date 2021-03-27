@@ -27,4 +27,6 @@ public interface ClienteDAO {
      * @return
      */
     public List<Cliente> consultarClientes() throws PersistenceException;
+    public void save(Cliente cli) throws PersistenceException;
+    public void vetarCliente(long idCliente,int estado) throws PersistenceException;
 }

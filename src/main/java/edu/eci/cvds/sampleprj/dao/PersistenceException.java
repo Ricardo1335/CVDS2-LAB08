@@ -11,5 +11,8 @@ public class PersistenceException extends Exception{
         super(string,e);
     }
 
+    public PersistenceException(String msg) {
+        super(msg);
+    }
     
 }
